@@ -1,0 +1,49 @@
+/* 1. Reset e Base (Padronizado) */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+
+body { background: #fdfaf3; color: #333; text-align: center; }
+
+/* 2. Menu (Copia das outras páginas) */
+nav { background: darkolivegreen; padding: 15px; border-bottom: 4px solid #703e0f; }
+nav ul { display: flex; justify-content: center; list-style: none; gap: 20px; }
+nav a { color: #f0e68c; text-decoration: none; font-weight: bold; }
+
+/* 3. Cabeçalho Destaque */
+header { 
+    background-color: darkolivegreen; 
+    color: white; 
+    padding: 60px 20px; 
+    margin-bottom: 30px; 
+}
+
+/* 4. Caixa de Informação (Simples e Limpa) */
+.preservacao-info { 
+    background: white; 
+    padding: 30px; 
+    width: 90%; 
+    max-width: 600px; /* Impede que o texto fique muito largo */
+    margin: 0 auto;  /* Centraliza o bloco na tela */
+    border-radius: 15px; 
+    border: 2px solid darkolivegreen; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+/* 5. Textos */
+h2 { color: #703e0f; margin-bottom: 20px; }
+
+p { 
+    font-size: 16px; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    text-align: justify; /* Deixa o texto alinhado dos dois lados, fica elegante */
+}
+
+/* 6. Fonte/Créditos */
+figcaption { 
+    font-size: 12px; 
+    border-top: 1px solid #ddd; 
+    padding-top: 10px; 
+    color: #666; 
+}
+
+figcaption a { color: darkolivegreen; text-decoration: underline; }
