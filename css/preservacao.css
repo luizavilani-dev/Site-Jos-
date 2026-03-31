@@ -1,16 +1,13 @@
-/* 1. Reset e Base (Padronizado) */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
 
 * {
     font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
 }
 
-/* FAZ A PÁGINA OCUPAR A TELA TODA */
 html, body {
     height: 100%;
 }
 
-/* ORGANIZA EM COLUNA */
 body { 
     background: #fdfaf3; 
     color: #333; 
@@ -19,12 +16,35 @@ body {
     flex-direction: column;
 }
 
-/* 2. Menu (Copia das outras páginas) */
-nav { background: darkolivegreen; padding: 15px; border-bottom: 4px solid #703e0f; }
-nav ul { display: flex; justify-content: center; list-style: none; gap: 20px; }
-nav a { color: #f0e68c; text-decoration: none; font-weight: bold; }
+nav {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background: darkolivegreen;
+    padding: 15px 0;
+}
 
-/* 3. Cabeçalho Destaque */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: #f5e9a3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background: #703e0f;
+    color: #fff;
+}
 header { 
     background-color: darkolivegreen; 
     color: white; 
@@ -32,25 +52,28 @@ header {
     margin-bottom: 30px; 
 }
 
-/* 4. Caixa de Informação (Simples e Limpa) */
+
 .preservacao-info { 
     background: white; 
     padding: 30px; 
     width: 90%; 
     max-width: 600px; 
-    margin: 0 auto;  
+    margin: 20px auto;  
     border-radius: 15px; 
     border: 2px solid darkolivegreen; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
 
-/* EMPURRA O FOOTER PRA BAIXO */
 main {
     flex: 1;
 }
 
-/* 5. Textos */
-h2 { color: #703e0f; margin-bottom: 20px; }
+
+h2 { 
+    color: #703e0f; 
+    margin-bottom: 20px; 
+}
+
 
 p { 
     font-size: 16px; 
@@ -59,24 +82,26 @@ p {
     text-align: justify; 
 }
 
-/* 6. Fonte/Créditos */
 figcaption { 
     font-size: 12px; 
     border-top: 1px solid #ddd; 
     padding-top: 10px; 
     color: #666; 
+    margin-top: 10px; 
 }
 
 figcaption a { color: darkolivegreen; text-decoration: underline; }
 
-/* --- RODAPÉ --- */
+
 footer {
     text-align: center;
     padding: 30px;
     background-color: #ddd;
     font-size: 0.8rem;
     color: #666;
+    margin-top: 30px;
 }
+
 footer p {
     margin: 0;
     text-align: center;
