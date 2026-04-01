@@ -11,29 +11,24 @@ body {
 }
 
 
-nnav {
-    position: absolute;
-    width: 100%;
-    z-index: 10;
+nav {
     background: darkolivegreen;
-    padding: 15px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    gap: 20px;
     list-style: none;
 }
 
 nav a {
-    color: #a35f31;
+    color: #f5e9a3;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
-    transition: 0.3s;
-    padding: 8px 15px;
-    border-radius: 20px;
 }
 
 nav a:hover {

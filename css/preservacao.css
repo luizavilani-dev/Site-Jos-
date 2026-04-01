@@ -15,19 +15,17 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 nav {
-    position: absolute;
-    width: 100%;
-    z-index: 10;
     background: darkolivegreen;
-    padding: 15px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    gap: 20px;
     list-style: none;
 }
 
@@ -35,23 +33,19 @@ nav a {
     color: #f5e9a3;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
-    transition: 0.3s;
-    padding: 8px 15px;
-    border-radius: 20px;
 }
 
 nav a:hover {
     background: #703e0f;
     color: #fff;
 }
+
 header { 
     background-color: darkolivegreen; 
     color: white; 
     padding: 60px 20px; 
     margin-bottom: 30px; 
 }
-
 
 .preservacao-info { 
     background: white; 
@@ -66,32 +60,52 @@ header {
 
 main {
     flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    justify-items: center;
 }
-
 
 h2 { 
     color: #703e0f; 
     margin-bottom: 20px; 
 }
 
-
-p { 
-    font-size: 16px; 
-    line-height: 1.6; 
-    margin-bottom: 20px; 
-    text-align: justify; 
+.card { 
+    background: #fff; 
+    padding: 20px; 
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px #ccc; 
 }
 
-figcaption { 
-    font-size: 12px; 
-    border-top: 1px solid #ddd; 
-    padding-top: 10px; 
-    color: #666; 
-    margin-top: 10px; 
+.card h2 { color: #703e0f; margin-bottom: 10px; }
+
+img { 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    border: 4px solid #703e0f; 
+    object-fit: cover; 
+    margin-bottom: 10px;
 }
 
-figcaption a { color: darkolivegreen; text-decoration: underline; }
+p { font-size: 14px; margin-bottom: 8px; text-align: left; }
 
+fonte { font-size: 12px; color: darkolivegreen; text-decoration: underline; }
+
+.fonte {
+    font-size: px;
+    color: #6b8e23;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fonte:hover {
+    text-decoration: underline;
+    color: #3e5c14;
+}
 
 footer {
     text-align: center;
@@ -99,10 +113,11 @@ footer {
     background-color: #ddd;
     font-size: 0.8rem;
     color: #666;
-    margin-top: 30px;
 }
 
 footer p {
     margin: 0;
     text-align: center;
 }
+
+
